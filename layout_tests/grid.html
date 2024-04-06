@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Hang's grid try out</title>
+<style>
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #d8fe0244;
+  padding: 10px;
+}
+
+.grid-container {
+  background-color: #e98181cc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hang's first try with layout &amp; grid</h1>
+
+<p>This is what the page layout should look like:</p>
+
+<div class="grid-container">
+  <header class="header">Lorem Ipsum</header>
+  <div class="menu">What is LI? Why do we use LI?</div>
+  <main class="main">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the leap into electronic typesetting, 
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+    containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+    Aldus PageMaker including versions of Lorem Ipsum.</main>  
+  <div class="right">Other Languages - Finnish - Swedish - English</div>
+  <footer class="footer">&copy; Lorem Ipsum</footer>
+</div>
+
+</body>
+</html>
