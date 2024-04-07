@@ -1,0 +1,32 @@
+.store-and-contact {
+    grid-area: logoBarLeft;
+}
+
+.logo {
+    grid-area: logoBarCenter;
+}
+
+.cart-and-account {
+    grid-area: logoBarRight;
+}
+
+.logo-bar {
+    display: grid;
+    grid-template-columns: 200px 500px 200px;
+    grid-template-rows: 10px 10px 10px;
+    background-color: rgb(127, 208, 255);
+    padding: auto;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.navigation-bar {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    background-color: burlywood;
+    justify-content: center;
+}
+
+.main-slider-banner {
+    display: inline;
+}
